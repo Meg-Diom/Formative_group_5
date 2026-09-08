@@ -15,7 +15,7 @@ def load_data():
             "user_id": None,
             "user_name": None,
             "spending_type": None,
-            "spending_on": None,
+            "spending_details": None,
             "amount": None,
             "date": None,
             "description": None
@@ -24,9 +24,10 @@ def load_data():
         "saving_goals": [
             {
             "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "date": None
+            "goals": None,
+            "target": None,
+            "saved_amount": None,
+            "progress": None
             }
         ]
         }
@@ -37,7 +38,7 @@ def load_data():
             "user_id": None,
             "user_name": None,
             "spending_type": None,
-            "spending_on": None,
+            "spending_details": None,
             "amount": None,
             "date": None,
             "description": None
@@ -45,9 +46,10 @@ def load_data():
         ],"saving_goals": [
         {
             "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "date": None
+            "goals": None,
+            "target": None,
+            "saved_amount": None,
+            "progress": None
             }
             ]
         }
@@ -59,7 +61,7 @@ def load_data():
             "user_id": None,
             "user_name": None,
             "spending_type": None,
-            "spending_on": None,
+            "spending_details": None,
             "amount": None,
             "date": None,
             "description": None
@@ -67,9 +69,10 @@ def load_data():
         ], "saving_goals": [
             {
             "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "date": None
+            "goals": None,
+            "target": None,
+            "saved_amount": None,
+            "progress": None
         }
         ]
         }
