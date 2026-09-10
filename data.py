@@ -10,69 +10,15 @@ def load_data():
             return data
     except FileNotFoundError:
         print("Error: File not found!")
-        return {"transactions": [
-            {
-            "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "spending_details": None,
-            "amount": None,
-            "date": None,
-            "description": None
-            }
-        ], 
-        "saving_goals": [
-            {
-            "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "date": None
-            }
-        ]
-        }
+        return {"transactions": [], "saving_goals": []}
     except json.JSONDecodeError:
         print("Error: Invalid JSON format")
-        return {"transactions": [
-            {
-            "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "spending_details": None,
-            "amount": None,
-            "date": None,
-            "description": None
-            }
-        ],"saving_goals": [
-        {
-            "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "date": None
-            }
-            ]
-        }
+        return {"transactions": [], "saving_goals": []}
     
     except IOError:
         print("Error: Couldn't read this file!")
-        return {"transactions": [
-            {
-            "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "spending_details": None,
-            "amount": None,
-            "date": None,
-            "description": None
-            }
-        ], "saving_goals": [
-            {
-            "user_id": None,
-            "user_name": None,
-            "spending_type": None,
-            "date": None
-        }
-        ]
-        }
+        return {"transactions": [], "saving_goals": []}
+
 def save_data(data):
 
     try:
