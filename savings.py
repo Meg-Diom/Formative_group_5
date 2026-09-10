@@ -2,9 +2,9 @@
 
 from reports import budget_summary
 
-def saving_progress(transactions, user_id, total_income, saving_goals):
+def saving_progress(transactions, user_id, saving_goals):
 
-    total_spending = budget_summary(transactions, user_id)
+    balance = budget_summary(transactions, user_id)
 
     results = []
 
@@ -16,7 +16,7 @@ def saving_progress(transactions, user_id, total_income, saving_goals):
         return "Goal not found"
 
     for saving_goal in results:
-        saving_goal["saved_amount"] = total_income - total_spending
+        saving_goal["saved_amount"] = balance
 
         if saving_goal["target"]:
             saving_goal["progress"] = (
