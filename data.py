@@ -14,7 +14,7 @@ def load_data():
     except json.JSONDecodeError:
         print("Error: Invalid JSON format")
         return {"transactions": [], "saving_goals": []}
-    
+
     except IOError:
         print("Error: Couldn't read this file!")
         return {"transactions": [], "saving_goals": []}
