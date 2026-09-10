@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def add_transactions(transactions, user_id, user_name, spending_type, spending_details, amount, date, description):
     new_transaction = {
         "user_id": user_id,
