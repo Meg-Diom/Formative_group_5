@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from reports import budget_summary
+
 def saving_progress(transactions, user_id, total_income, saving_goals):
 
     total_spending = budget_summary(transactions, user_id)
