@@ -25,11 +25,18 @@ def search_transaction(transactions, user_id):
 def view_transaction(transactions, user_id):
 
     results = search_transaction(transactions, user_id)
-    
+
     if not results:
         print("No Transactions yet")
+        return
+
+    print("=" * 25)
+    print("TRANSACTION HISTORY")
+    print("=" * 25)
+
     for result in results:
-        print(f"{25*"="}\nTRANSACTION HISTORY\n{25*"="} {result}\n{25*"="}")
+        print(result)
+        print("=" * 25)
 
 def update_transaction(transactions, user_id, spending_details, amount, field, modify):
     
