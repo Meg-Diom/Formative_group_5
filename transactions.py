@@ -5,7 +5,7 @@ def add_transactions(transactions, user_id, user_name, spending_type, spending_d
         "user_id": user_id,
         "user_name": user_name,
         "spending_type": spending_type,
-        "spending_datails": spending_details,
+        "spending_details": spending_details,
         "amount": amount,
         "date": date,
         "description": description
